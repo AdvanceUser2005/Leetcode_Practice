@@ -1,3 +1,0 @@
-/home/advanceuser1925/Projects/Leetcode_Practice/practice/build/CMakeFiles/Practice.dir
-/home/advanceuser1925/Projects/Leetcode_Practice/practice/build/CMakeFiles/edit_cache.dir
-/home/advanceuser1925/Projects/Leetcode_Practice/practice/build/CMakeFiles/rebuild_cache.dir
