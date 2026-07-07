@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/Practice.dir/link.d CMakeFiles/Practice.dir/src/main.cpp.o -o Practice
