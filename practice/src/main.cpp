@@ -66,26 +66,43 @@ using namespace std;
 // LEETCODE PRACTICE QUESTION
 // Verifying if the given numbers is a prime numb er or not
 
-int main() {
+// int main() {
 
-    cout << "Please enter the number to check for prime: ";
+//     cout << "Please enter the number to check for prime: ";
+//     int n;
+//     cin >> n;
+
+//     bool isPrime = true;    // assumed by default
+
+//     for (int i = 2; i <= n-1; i++) {
+//         if (n % i == 0) {     // Not prime
+//             isPrime = false;
+//             break;
+//         }
+
+//     }
+
+//     if (isPrime == true) {
+//         cout << "Yes, it is a prime number." << endl;
+//     } else { cout << "No, it is not a prime number" << endl; }
+
+//     return 0;
+
+// }
+
+// PATTERNS 
+// creating a square pattern with n = noumber of enteries per side.
+// Example: n = 4
+//          1 2 3 4 
+//          1 2 3 4 
+//          1 2 3 4 
+//          1 2 3 4 
+
+
+int main() {
+    cout << "Please enter the number of enteries per side: ";
     int n;
     cin >> n;
 
-    bool isPrime = true;    // assumed by default
-
-    for (int i = 2; i <= n-1; i++) {
-        if (n % i == 0) {     // Not prime
-            isPrime = false;
-            break;
-        }
-
-    }
-
-    if (isPrime == true) {
-        cout << "Yes, it is a prime number." << endl;
-    } else { cout << "No, it is not a prime number" << endl; }
-
-    return 0;
-
+    
 }
