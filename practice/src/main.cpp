@@ -62,3 +62,30 @@ using namespace std;
 //     cout<< "The sum of all odd numbers till n is: " << sum << endl;
 //     return 0;
 // }
+
+// LEETCODE PRACTICE QUESTION
+// Verifying if the given numbers is a prime numb er or not
+
+int main() {
+
+    cout << "Please enter the number to check for prime: ";
+    int n;
+    cin >> n;
+
+    bool isPrime = true;    // assumed by default
+
+    for (int i = 2; i <= n-1; i++) {
+        if (n % i == 0) {     // Not prime
+            isPrime = false;
+            break;
+        }
+
+    }
+
+    if (isPrime == true) {
+        cout << "Yes, it is a prime number." << endl;
+    } else { cout << "No, it is not a prime number" << endl; }
+
+    return 0;
+
+}
