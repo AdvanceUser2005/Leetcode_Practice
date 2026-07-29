@@ -123,22 +123,40 @@ using namespace std;
 // Pattern
 // same pattern as above but for alphabets this time - all caps
 
+// int main() {
+
+//     int n = 4;
+//     char ch = 'A';
+
+//     for (int i = 1; i <= n; i++) {
+//         for (int i = 1; i <= n; i++) {
+//             cout << ch;
+//             ch = ch + 1;
+//             if ( i ==  n) {
+//                 break;
+//             } else {
+//                 cout << " ";
+//             }
+//         }
+//         cout << endl;
+//     }
+// }
+
+// Triangle Pattern
+// *
+// * *
+// * * *
+// based upon value of n for n = n number of rows.
+
+
 int main() {
 
     int n = 4;
-    char ch = 'A';
+    char ch = '*';
 
     for (int i = 1; i <= n; i++) {
-        for (int i = 1; i <= n; i++) {
-            cout << ch;
-            ch = ch + 1;
-            if ( i ==  n) {
-                break;
-            } else {
-                cout << " ";
-            }
-        }
-        cout << endl;
+        for (
     }
+
 }
 
