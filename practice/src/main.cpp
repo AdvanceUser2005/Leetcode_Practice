@@ -45,23 +45,16 @@ int main() {
 
     int sum = 0;
 
-    for(int i = 1; i <= n; i++) {
-
-        if (i % 2 != 0) {   // only adding the odd numbers
-            sum = sum + i;
-        }  else {
-            i++;
+    for (int i = 1; i <= n; i++) {
+        if (i%2 != 0) {
+            cout << i;
+            if (i == n || i == n-1) {
+                cout << endl;
+            } else {
+                cout << " + ";
+            }
         }
 
-        if (i == n) {   // Displaying the list of all odd numbers
-            cout << endl;
-        } else {
-            cout << " + ";
-        }
+
     }
-
-    cout << "The final sum is: " << sum << endl; //Displaying final result
-
-    return 0;
-
 }
