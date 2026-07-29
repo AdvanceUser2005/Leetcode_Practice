@@ -99,23 +99,30 @@ using namespace std;
 //          1 2 3 4 
 
 
-int main() {
-    cout << "Please enter the number of enteries per side: ";
-    int n;
-    cin >> n;
+// int main() {
+//     cout << "Please enter the number of enteries per side: ";
+//     int n;
+//     cin >> n;
 
-    for (int i = 1; i <= n; i++) {
-        for(int i = 1; i <= n; i++) {
-            cout << i;
-            if (i == n) {
-                break;
-            } else {
-                cout << " ";
-            }
-        }
-        cout << endl;
+//     for (int i = 1; i <= n; i++) {
+//         for(int i = 1; i <= n; i++) {
+//             cout << i;
+//             if (i == n) {
+//                 break;
+//             } else {
+//                 cout << " ";
+//             }
+//         }
+//         cout << endl;
         
-    }
+//     }
 
-    return 0;
+//     return 0;
+// }
+
+// Pattern
+// same pattern as above but for alphabets this time - all caps
+
+int main() {
+    
 }
