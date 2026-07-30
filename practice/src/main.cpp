@@ -147,16 +147,29 @@ using namespace std;
 // * *
 // * * *
 // based upon value of n for n = n number of rows.
+// Its important to note that for each row there is the same no of elements in them. 
+// 1st rwo hass 1 elements
+// 2nd row has two elements and so on. 
 
 
 int main() {
 
-    int n = 4;
-    char ch = '*';
+    char ch = '*';  // the charaacter we are printing the triangle with
+    int n = 4;      // no of lines in the triangle
 
     for (int i = 1; i <= n; i++) {
-        for (
+        for (int j = 1; j <= i; j++) {
+            cout << ch;
+
+            if (j == i) {
+                break;
+            } else {
+                cout << " ";
+            }
+        }
+        cout << endl;
     }
+
 
 }
 
