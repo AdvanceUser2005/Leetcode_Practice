@@ -152,24 +152,26 @@ using namespace std;
 // 2nd row has two elements and so on. 
 
 
-int main() {
+// int main() {
 
-    char ch = '*';  // the charaacter we are printing the triangle with
-    int n = 4;      // no of lines in the triangle
+//     char ch = '*';  // the charaacter we are printing the triangle with
+    
+//     cout << "please enter how many lines do you want in the triangle: ";
+//     int n;
+//     cin >> n;
 
-    for (int i = 1; i <= n; i++) {
-        for (int j = 1; j <= i; j++) {
-            cout << ch;
+//     for (int i = 1; i <= n; i++) {
+//         for (int j = 1; j <= i; j++) {
+//             cout << ch;
 
-            if (j == i) {
-                break;
-            } else {
-                cout << " ";
-            }
-        }
-        cout << endl;
-    }
+//             if (j == i) {
+//                 break;
+//             } else {
+//                 cout << " ";
+//             }
+//         }
+//         cout << endl;
+//     }
 
-
-}
+// }
 
