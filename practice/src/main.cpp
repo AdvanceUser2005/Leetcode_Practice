@@ -1,4 +1,5 @@
 #include <iostream>
+#include "functions.hpp"
 
 using namespace std;
 
@@ -174,4 +175,12 @@ using namespace std;
 //     }
 
 // }
+
+int main() {
+    sum(5, 4);
+    cout << product(5, 4) << endl;
+    return 0;
+}
+
+
 
