@@ -181,15 +181,46 @@ using namespace std;
 // number of digits = number of loops through the number
 // maybe i don tneed to know the total number of digits? 
 
-int main() {
-    int n = 147;
-    cout << n % 10 << endl; //verifying logic
-    cout << 14 % 10 << endl;
-    cout << 1 % 10 << endl;
+// int main() {
+//     int n = 147;
+//     cout << n % 10 << endl; //verifying logic
+//     cout << 14 % 10 << endl;
+//     cout << 1 % 10 << endl;
 
-    cout << sum_of_digits(9999999) << endl;
+//     cout << sum_of_digits(9999999) << endl;
     
-    return 0;
+//     return 0;
+// }
+
+
+//Refreshing topics
+
+//Base Class
+class Vehicle {
+    public:
+        string make = "Ferrari";
+        void horn() {
+            cout << "TOOT!!!" << endl;
+        }
+};
+
+//Derived Class
+class Car : public Vehicle {
+    public:
+        string model = "Ford";
+};
+
+
+
+int main() {
+
+    Car mycar;
+
+    mycar.horn();
+    cout << mycar.make << " " << mycar.model << endl;
 }
+
+//Basically everything in between these classes is shared!! Does it work with private? ---- NO it doesnt work with private. It has to be public. 
+
 
 
