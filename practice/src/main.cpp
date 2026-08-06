@@ -176,11 +176,15 @@ using namespace std;
 
 // }
 
+// LEETCODE PRACTICE 
+// sum of all the digits in a given number
+
 int main() {
-    sum(5, 4);
-    cout << product(5, 4) << endl;
+    int n = 147;
+    cout << n % 10 << endl; //verifying logic
+    cout << 14 % 10 << endl;
+    cout << 1 % 10 << endl;
     return 0;
 }
-
 
 
