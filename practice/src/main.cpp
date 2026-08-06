@@ -178,12 +178,17 @@ using namespace std;
 
 // LEETCODE PRACTICE 
 // sum of all the digits in a given number
+// number of digits = number of loops through the number
+// maybe i don tneed to know the total number of digits? 
 
 int main() {
     int n = 147;
     cout << n % 10 << endl; //verifying logic
     cout << 14 % 10 << endl;
     cout << 1 % 10 << endl;
+
+    cout << sum_of_digits(9999999) << endl;
+    
     return 0;
 }
 
