@@ -223,33 +223,17 @@ using namespace std;
 //Basically everything in between these classes is shared!! Does it work with private? ---- NO it doesnt work with private. It has to be public. 
 
 
-
-//sum of all the enteries in a vector 
+// LEETCODE PRACTICE
+//reversing the array enteries
 
 int main() {
-
     int arr[5] = {1, 2, 3, 4, 5};
     int sz = sizeof(arr) / sizeof(arr[0]);
 
-    // printArray(arr, sz);
-// 
-    // cout << sumArray(arr, sz) << endl;
-
-    
-    int* t = &arr[0];
-
-    // cout << t << endl; 
-    
-    t = t + 4;
-
-    // cout << *t << endl;
-
-    reverseArray(arr, sz);
-    printArray(reverseArray(arr, sz), sz);
-
+    int* ptr = &arr[0];
+    cout << ptr << endl;
+    cout << *ptr << endl;
+    cout << &ptr << endl;
 
     return 0;
 }
-
-
-
