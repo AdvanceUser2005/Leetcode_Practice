@@ -231,9 +231,13 @@ int main() {
     int arr[] = {1, 2, 3};
     int sz = sizeof(arr) / sizeof(arr[0]);
 
+    int sum{0};
+
     for(int i = 0; i < sz; i++) {   //simple loop for printing out enteries in a list
-        cout << arr[i] << endl; 
+        sum = sum + arr[i];
     }
+
+    cout << sum << endl;
 
     return 0;
 }
