@@ -195,32 +195,48 @@ using namespace std;
 
 //Refreshing topics
 
-//Base Class
-class Vehicle {
-    public:
-        string make = "Ferrari";
-        void horn() {
-            cout << "TOOT!!!" << endl;
-        }
-};
+// //Base Class
+// class Vehicle {
+//     public:
+//         string make = "Ferrari";
+//         void horn() {
+//             cout << "TOOT!!!" << endl;
+//         }
+// };
 
-//Derived Class
-class Car : public Vehicle {
-    public:
-        string model = "Ford";
-};
+// //Derived Class
+// class Car : public Vehicle {
+//     public:
+//         string model = "Ford";
+// };
 
 
+
+// int main() {
+
+//     Car mycar;
+
+//     mycar.horn();
+//     cout << mycar.make << " " << mycar.model << endl;
+// }
+
+//Basically everything in between these classes is shared!! Does it work with private? ---- NO it doesnt work with private. It has to be public. 
+
+
+
+//sum of all the enteries in a vector 
 
 int main() {
 
-    Car mycar;
+    int arr[] = {1, 2, 3};
+    int sz = sizeof(arr) / sizeof(arr[0]);
 
-    mycar.horn();
-    cout << mycar.make << " " << mycar.model << endl;
+    for(int i = 0; i < sz; i++) {   //simple loop for printing out enteries in a list
+        cout << arr[i] << endl; 
+    }
+
+    return 0;
 }
-
-//Basically everything in between these classes is shared!! Does it work with private? ---- NO it doesnt work with private. It has to be public. 
 
 
 
