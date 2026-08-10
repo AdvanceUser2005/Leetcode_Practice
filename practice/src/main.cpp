@@ -228,16 +228,25 @@ using namespace std;
 
 int main() {
 
-    int arr[] = {1, 2, 3};
+    int arr[5] = {1, 2, 3, 4, 5};
     int sz = sizeof(arr) / sizeof(arr[0]);
 
-    int sum{0};
+    // printArray(arr, sz);
+// 
+    // cout << sumArray(arr, sz) << endl;
 
-    for(int i = 0; i < sz; i++) {   //simple loop for printing out enteries in a list
-        sum = sum + arr[i];
-    }
+    
+    int* t = &arr[0];
 
-    cout << sum << endl;
+    // cout << t << endl; 
+    
+    t = t + 4;
+
+    // cout << *t << endl;
+
+    reverseArray(arr, sz);
+    printArray(reverseArray(arr, sz), sz);
+
 
     return 0;
 }
