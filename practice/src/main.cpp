@@ -226,14 +226,49 @@ using namespace std;
 // LEETCODE PRACTICE
 //reversing the array enteries
 
-int main() {
-    int arr[5] = {1, 2, 3, 4, 5};
-    int sz = sizeof(arr) / sizeof(arr[0]);
+//remember if i need the memory address, i need to use '&'
 
-    int* ptr = &arr[0];
-    cout << ptr << endl;
+// int main() {
+
+//     int arr[5] = {1, 2, 3, 4, 5};
+//     int sz = sizeof(arr) / sizeof(arr[0]);
+
+//     int x = 10;
+//     int* ptr = &arr[0];
+
+//     cout << "Value of x: " << x << endl;
+//     cout << "Address of x: " << ptr << endl;
+//     cout << "Dereferencing the value of ptr: " << *ptr << endl;     // to get the value at a memory address use this
+//     cout << "Address of ptr: " << &ptr << endl;                     // to get memory address use this
+//     cout << "What will happen with only ptr: " << ptr << endl;      
+
+//     ptr = ptr + 4;
+
+//     cout << *ptr << endl;
+
+//     return 0;
+
+// }
+
+// lets look at it step by step 
+// 1. value of x is 10 
+// 2. variable ptr points at memory address of position 0 at array
+
+
+//Revering the array without function right now
+
+int main() {
+    int array[5] = {1, 2, 3, 4, 5};
+    int sz = sizeof(array) / sizeof(array[0]);
+
+    int* ptr = &array[sz - 1];
+
     cout << *ptr << endl;
-    cout << &ptr << endl;
+
+    for (int i = 0; i < sz - 1; i++) {
+        ptr = ptr - 1;
+        cout << *ptr << endl;
+    }
 
     return 0;
 }
