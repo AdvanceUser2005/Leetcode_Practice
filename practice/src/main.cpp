@@ -350,12 +350,37 @@ using namespace std;
     
 // }
 
+// int main() {
+//     int arr[] = {88, 567, 32245, 63456, 32453};
+//     int sz = sizeof(arr) / sizeof(arr[0]);
+//     int target = 88;
+
+//     cout << linearSearch(arr, sz, target) << endl;
+
+
+// }
+
+// TWO POINT ARRAY REVERSAL
+// Logic behind it: 
+// a pointer starts increasing and another pointer starts decreasing
+// thats how they swap places. 
+
 int main() {
-    int arr[] = {1, 2, 3, 4, 5};
-    int sz = sizeof(arr) / sizeof(arr[0]);
-    int target = 7;
+    int array[] = {7, 6, 8, 9, 1, 4};
+    int size = sizeof(array) / sizeof(array[0]);
 
-    cout << linearSearch(arr, sz, target) << endl;
+    int* ptr1 = array;
+    int* ptr2 = array + size - 1;
 
+    for (int i = 0; i < size; i++) {
+        *ptr1 = *ptr2 - i;
+        for (int j = 0; j < size; j++) {
+            *ptr2 = *ptr1 + j;
+        }
+    }
+
+    for (int x = 0; x < size; x++) {
+        cout << array[x] << endl;
+    }
 
 }
