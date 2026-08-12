@@ -291,24 +291,35 @@ using namespace std;
 //LEETCODE PRACTICE
 // FNIIDNG THE HIGHEST NUMBER IN AN ARRAY
 
+// int main() {
+//     int array[] = {1, 4, 67, 7, 9};
+//     int size = sizeof(array) / sizeof(array[0]);
+
+//     int max = INT_MIN;
+
+
+//     for(int i = 0; i < size; i++) {
+//         if(array[i] > max) {
+//             max = array[i];
+//         }
+//     }
+
+//     cout << max << endl;
+
+// }
+
+//LEETCODE PRACTICE
+// linear search 
+
 int main() {
-    int array[] = {1, 4, 67, 7, 9};
+    int array[] = {1, 5, 6, 3, 7, 8, 0};
+    int target = 8;
+
     int size = sizeof(array) / sizeof(array[0]);
 
-    int max = INT_MIN;
-
-
-    for(int i = 0; i < size; i++) {
-        if(array[i] > max) {
-            max = array[i];
+    for (int i = 0; i < size; i++) {
+        if (target == array[i]) {
+            cout << i << endl;
         }
     }
-
-    cout << max << endl;
-
-
-
-
-
-
 }
