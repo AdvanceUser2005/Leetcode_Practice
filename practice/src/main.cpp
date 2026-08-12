@@ -257,18 +257,31 @@ using namespace std;
 
 //Revering the array without function right now
 
+// int main() {
+//     int array[5] = {77, 55, 99, 44, 22};
+//     int sz = sizeof(array) / sizeof(array[0]);
+
+//     int* ptr = &array[sz - 1];
+
+//     cout << *ptr << endl;
+
+//     for (int i = 0; i < sz - 1; i++) {
+//         ptr = ptr - 1;
+//         cout << *ptr << endl;
+//     }
+
+//     return 0;
+// }
+
+//LEETCODE PRACTICE
+// moving array reversal into a function
+
 int main() {
-    int array[5] = {1, 2, 3, 4, 5};
+
+    int array[] = { 1, 2, 3, 4, 5};
     int sz = sizeof(array) / sizeof(array[0]);
 
-    int* ptr = &array[sz - 1];
+    reverseArray(array, sz);
 
-    cout << *ptr << endl;
 
-    for (int i = 0; i < sz - 1; i++) {
-        ptr = ptr - 1;
-        cout << *ptr << endl;
-    }
-
-    return 0;
 }
