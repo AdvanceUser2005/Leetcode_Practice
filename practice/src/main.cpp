@@ -1,5 +1,6 @@
 #include <iostream>
 #include "functions.hpp"
+#include <climits>
 
 using namespace std;
 
@@ -276,12 +277,38 @@ using namespace std;
 //LEETCODE PRACTICE
 // moving array reversal into a function
 
+// int main() {
+
+//     int array[] = { 1, 2, 3, 4, 5};
+//     int sz = sizeof(array) / sizeof(array[0]);
+
+//     reverseArray(array, sz);
+
+
+// }
+
+
+//LEETCODE PRACTICE
+// FNIIDNG THE HIGHEST NUMBER IN AN ARRAY
+
 int main() {
+    int array[] = {1, 4, 67, 7, 9};
+    int size = sizeof(array) / sizeof(array[0]);
 
-    int array[] = { 1, 2, 3, 4, 5};
-    int sz = sizeof(array) / sizeof(array[0]);
+    int max = INT_MIN;
 
-    reverseArray(array, sz);
+
+    for(int i = 0; i < size; i++) {
+        if(array[i] > max) {
+            max = array[i];
+        }
+    }
+
+    cout << max << endl;
+
+
+
+
 
 
 }
