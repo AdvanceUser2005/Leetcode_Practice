@@ -311,15 +311,41 @@ using namespace std;
 //LEETCODE PRACTICE
 // linear search 
 
-int main() {
-    int array[] = {1, 5, 6, 3, 7, 8, 0};
-    int target = 8;
+// int main() {
+//     int array[] = {1, 5, 6, 3, 7, 8, 0};
+//     int target = 8;
 
+//     int size = sizeof(array) / sizeof(array[0]);
+
+//     for (int i = 0; i < size; i++) {
+//         if (target == array[i]) {
+//             cout << i << endl;
+//         }
+//     }
+// }
+
+//Refine linear search further to incorporate an output of the index if found
+// or else print 0 or false if not found.
+
+int main() {
+    int array[5] = {1, 5, 6, 32, 2};
     int size = sizeof(array) / sizeof(array[0]);
+
+    int target = 0;
+    bool found = false;
 
     for (int i = 0; i < size; i++) {
         if (target == array[i]) {
             cout << i << endl;
+            found = true;
+            break;
         }
     }
+
+    if (found == false) {
+        cout << "-1" << endl;
+    }
+
+    return 0;
+    
 }
