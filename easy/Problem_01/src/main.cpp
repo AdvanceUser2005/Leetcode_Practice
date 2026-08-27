@@ -22,12 +22,6 @@ public:
     };
 };
 
-int main() {
-    //Test cases
-
-
-}
-
 class SolutionEfficient {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
@@ -42,3 +36,10 @@ public:
         return {};
     }
 };
+
+int main() {
+    //Test cases
+
+
+}
+
