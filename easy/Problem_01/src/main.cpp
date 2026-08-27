@@ -1,28 +1,17 @@
-#include <iostream>
-
-
-int main() {
-    
-    // Defining a  test case to practice with
-    int array[] = {2, 7, 11, 15};
-    int target = 9; // Defined target for tthe test case
-
-    int size = sizeof(array) / sizeof(array[0]);
-    
-    // to find the sum pairs, it has to for every number in the array and find the number. 
-    // 9 - 2 = 7
-    //pairs are 2 and 7
-
-    for (int i = 0; i < size; i++) {
-        int num1 = target - array[i];
-        if (array[i] = num1) {
-            int num1pair = array[i];
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        vector<int> sol;
+        for(int j = 0; j < nums.size(); j++) {
+            for (int i = 0; i < nums.size(); i++) {
+                if (nums.at(j) + nums.at(i) == target) {
+                    sol.push_back(j);
+                    sol.push_back(i);
+                    return sol;
+                }
+            }
         }
-        std::cout << array[i] << " " << num1 << std::endl;
-    }
 
-    std::cout << "testing" << std::endl;
-
-    return 0;
-
-}
+        return sol;
+    };
+};
