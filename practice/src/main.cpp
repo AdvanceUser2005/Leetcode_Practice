@@ -365,22 +365,26 @@ using namespace std;
 // a pointer starts increasing and another pointer starts decreasing
 // thats how they swap places. 
 
-int main() {
-    int array[] = {7, 6, 8, 9, 1, 4};
-    int size = sizeof(array) / sizeof(array[0]);
+// int main() {
+//     int array[] = {7, 6, 8, 9, 1, 4};
+//     int size = sizeof(array) / sizeof(array[0]);
 
-    int* ptr1 = array;
-    int* ptr2 = array + size - 1;
+//     int* ptr1 = array;
+//     int* ptr2 = array + size - 1;
 
-    for (int i = 0; i < size; i++) {
-        *ptr1 = *ptr2 - i;
-        for (int j = 0; j < size; j++) {
-            *ptr2 = *ptr1 + j;
-        }
-    }
+//     for (int i = 0; i < size; i++) {
+//         *ptr1 = *ptr2 - i;
+//         for (int j = 0; j < size; j++) {
+//             *ptr2 = *ptr1 + j;
+//         }
+//     }
 
-    for (int x = 0; x < size; x++) {
-        cout << array[x] << endl;
-    }
+//     for (int x = 0; x < size; x++) {
+//         cout << array[x] << endl;
+//     }
 
-}
+// }
+
+
+//Learning Hash Maps
+
